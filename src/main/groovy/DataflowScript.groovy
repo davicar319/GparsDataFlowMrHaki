@@ -11,10 +11,7 @@ final Dataflows data = new Dataflows()
 task {
     println("Task 'convertTemperature' is waiting for dataflow variable 'cityWeather'")
 
-    //Get the dataflow variable cityWeather value from
-    //Dataflows data object.  The value
-    //is set by the findCityWeather task.
-    //If the value is not yet set, wait.
+
     final cityWeather = data.cityWeather
     final cityTemperature = cityWeather.temperature
 
